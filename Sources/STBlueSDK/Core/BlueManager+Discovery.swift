@@ -113,7 +113,8 @@ private extension BlueManager {
 
         let scanOptions: [String: Any] = [ CBCentralManagerScanOptionAllowDuplicatesKey: true ]
         self.advertiseFilters = advertiseFilters
-        centralManager.scanForPeripherals(withServices: nil, options: scanOptions)
+//        centralManager.scanForPeripherals(withServices: nil, options: scanOptions)
+        centralManager.scanForPeripherals(withServices: nil, options: nil)
         isDiscovering = true
 
         delegates.forEach { delegate in

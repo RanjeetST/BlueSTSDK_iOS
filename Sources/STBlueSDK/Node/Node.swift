@@ -263,3 +263,12 @@ extension Node: Equatable {
         return lhs.address == rhs.address
     }
 }
+
+
+extension Node: CustomStringConvertible , Identifiable {
+    public var description: String {
+        return (advertiseInfo.name ?? "No Name") + advertiseInfo.deviceId.description
+    }
+    
+    
+}

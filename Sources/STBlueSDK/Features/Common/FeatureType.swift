@@ -308,10 +308,8 @@ public extension FeatureType {
             return (identifier, GeneralPurposeFeature.self)
         case .standard(let identifier):
             switch identifier {
-            case Mask.Standard.adpcmAudioSync: return (identifier, ADPCMAudioSyncFeature.self)
             case Mask.Standard.switchOnOff: return (identifier, SwitchFeature.self)
             case Mask.Standard.directionOfArrival: return (identifier, DirectionOfArrivalFeature.self)
-            case Mask.Standard.adpcmAudio: return (identifier, ADPCMAudioFeature.self)
             case Mask.Standard.micLevel: return (identifier, MicLevelFeature.self)
             case Mask.Standard.proximity: return (identifier, ProximityFeature.self)
             case Mask.Standard.luminosity: return (identifier, LuminosityFeature.self)
@@ -325,7 +323,6 @@ public extension FeatureType {
             case Mask.Standard.temperatureB: return (identifier, TemperatureFeature.self)
             case Mask.Standard.coSensor: return (identifier, COSensorFeature.self)
             case Mask.Standard.sdLogging: return (identifier, SDLoggingFeature.self)
-            case Mask.Standard.beamForming: return (identifier, BeamFormingFeature.self)
             case Mask.Standard.accelerationEvent: return (identifier, AccelerationEventFeature.self)
             case Mask.Standard.freeFall: return (identifier, FreeFallFeature.self)
             case Mask.Standard.sensorFusionCompact: return (identifier, SensorFusionCompactFeature.self)
@@ -355,8 +352,6 @@ public extension FeatureType {
         case .extended(let identifier):
             // TODO: specialize extrended feature class
             switch identifier {
-            case Mask.Extended.opusAudio: return (identifier, OpusAudioFeature.self)
-            case Mask.Extended.opusAudioConf: return (identifier, OpusAudioConfFeature.self)
             case Mask.Extended.audioClassification: return (identifier, AudioClassificationFeature.self)
             case Mask.Extended.aiLogging: return (identifier, AILoggingFeature.self)
             case Mask.Extended.fftAmplitude: return (identifier, FFTAmplitudeFeature.self)
