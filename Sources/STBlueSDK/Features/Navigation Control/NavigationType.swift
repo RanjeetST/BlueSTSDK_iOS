@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import STBlueSDK
 import UIKit
 public enum NavigationType: UInt8, FeatureCommandType, CaseIterable {
     

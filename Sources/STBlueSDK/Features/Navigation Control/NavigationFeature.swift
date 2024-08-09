@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import STBlueSDK
 
 public class NavigationFeature: BaseFeature<NavigationData> {
     

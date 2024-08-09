@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import STBlueSDK
 
 public struct NavigationData {
     
