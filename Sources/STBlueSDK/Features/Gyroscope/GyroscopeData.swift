@@ -28,20 +28,20 @@ public struct GyroscopeData {
         
         self.gyroX = FeatureField<Float>(name: "X",
                                          uom: "dps",
-                                         min: Self.maxValue,
-                                         max: Self.minValue,
+                                         min: Self.minValue,
+                                         max: Self.maxValue,
                                          value: gyroX)
         
         self.gyroY = FeatureField<Float>(name: "X",
                                          uom: "dps",
-                                         min: Self.maxValue,
-                                         max: Self.minValue,
+                                         min: Self.minValue,
+                                         max: Self.maxValue,
                                          value: gyroY)
         
         self.gyroZ = FeatureField<Float>(name: "Z",
                                          uom: "dps",
-                                         min: Self.maxValue,
-                                         max: Self.minValue,
+                                         min: Self.minValue,
+                                         max: Self.maxValue,
                                          value: gyroZ)
     }
     

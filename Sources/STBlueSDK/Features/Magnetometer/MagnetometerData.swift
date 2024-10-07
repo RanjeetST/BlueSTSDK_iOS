@@ -25,20 +25,20 @@ public struct MagnetometerData {
         
         self.magX = FeatureField<Float>(name: "X",
                                         uom: "mGa",
-                                        min: 2000,
-                                        max: -2000,
+                                        min: -2000,
+                                        max: 2000,
                                         value: magX)
         
         self.magY = FeatureField<Float>(name: "Y",
                                         uom: "mGa",
-                                        min: 2000,
-                                        max: -2000,
+                                        min: -2000,
+                                        max: 2000,
                                         value: magY)
         
         self.magZ = FeatureField<Float>(name: "Z",
                                         uom: "mGa",
-                                        min: 2000,
-                                        max: -2000,
+                                        min: -2000,
+                                        max: 2000,
                                         value: magZ)
     }
     

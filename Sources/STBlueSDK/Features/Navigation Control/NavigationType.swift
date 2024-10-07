@@ -18,7 +18,7 @@ public enum NavigationType: UInt8, FeatureCommandType, CaseIterable {
     }
     
     public var useMask: Bool {
-        true
+        true // this will be false if extended feature
     }
     
     public func data(with nodeId: UInt8) -> Data {
